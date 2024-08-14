@@ -114,7 +114,9 @@ p {
   left: 5px;
   transform: rotate(-25deg);
 }
-
+.card-text{
+  font-size: 10px;
+}
 /* CUSTOM BUTTON */
 .custom-btn {
   background: var(--dark-color);
@@ -132,6 +134,42 @@ p {
   color: var(--dark-color);
   background: var(--primary-color);
 }
+.project-card {
+  height: 400px; /* Set a fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card img {
+  height: 200px; /* Adjust based on design needs */
+  object-fit: cover;
+}
+
+.project-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.project-card .card-text {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+.project-card .d-flex {
+  margin-top: auto;
+}
+
 
 /*---------------------------------------
      GENERAL               
